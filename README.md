@@ -2,6 +2,8 @@
 
 ### Desing Patterns✨
 
+Criação	Resultado
+<font color=\"red\">Texto com cor vermelha</font>
 
 <font color=\"red\">**Problema 1 →**</font> Uma classe a qual nunca vai parar de crescer e com isso terá muitos if/else, switch/case e por este motivo dificultará a manutenção dessa classe. Cenário: Uma determina regra de negócio, só que varia de acordo com algum parâmetro.
 
