@@ -10,6 +10,8 @@
 
 :information_source:**Objetivo do strategy →** Deixar o código mais coeso, pois cada classe tem sua estratégia especifica e  uma não conhece a  outra.
 
+### Problema 2
+
 :red_circle:**Problema 2 →** Cenário parecido com o primeiro, mas com a diferença de que não sabemos qual das inúmeras regra iremos aplicar, o sistema pode se utilizar ou parar em qualquer uma delas. Existe uma complexidade maior no que se deve ser feito pelo algoritmo além dos if/else. Como não sabemos qual é a regra a ser utilizada, não conseguimos utilizar o strategy pois ele depende de quando sabemos qual parâmetro a ser utilizado para aplicar a regra em especifico.
 
 :heavy_check_mark:**Solução →** Utilizado o padrão de projeto **Chain of Responsibility**, aplicamos uma cadeia de chamada das regras, como não sabemos qual vai ser aplicada. Realizamos essa cadeia de chamada para verificação e no final se nenhuma dela for aplicadas retornamos que não teve nenhum retorno. Assim solucionamos o problema de não saber qual regra vai ser aplicada.
