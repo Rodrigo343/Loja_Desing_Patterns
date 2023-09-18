@@ -37,3 +37,12 @@
 :heavy_check_mark:**Solução →** Utilizado o padrão de projeto State, o qual nos ajuda nessa questão de estado, a ir de um estado para outro. O mesmo no ajuda a implementar a regra de cada estado, como passamos por eles, a diminuir questão de código duplicado para que fique mais fácil de entender a regra de cada estado, como se interagem entre si e oque é possível ou não realizar entre eles.
 
 :information_source:**Objetivo do State →** Melhorar a coesão do código quando implementando no cenário que temos algo que possua estados, para separa melhor funcionalidade de cada um, assim como suas interações e delimitações.
+
+---
+### Problema 5
+
+:red_circle:**Problema 5 →** Problema onde temos uma classe que contenha as suas informações mas a utilização dessa classe se encontra no rquivo da CLI, controller ou algo do tipo, onde os dados das mesma são utilizados de formas diversas, como por exemplo, salvar as informações no banco de dados, enviar uma notificação para um e-mail que foi salvo os dados entre outras dependências de funcionalidades. Todas as funcionalidades que citei a cima tem correlação com o processo de utilização da classe mencionada
+
+:heavy_check_mark:**Solução →** Utilizado o padrão de projeto Command Handlers, conseguimos separa tanto as informações dessa classe que precisamos preencher em um local especifico. E além disso separamos suas ações que utilizam-se das informações dessa classe em outro local para felicitar o entendimento e melhorar a construção do código, ou seja, uma classe é responsável pelos atributos e outra pelas ações relacionadas a classe que contem os atributos.
+
+:information_source:**Objetivo do Command Handlers →** Com esse padrão conseguimos separa as características de uma classe e a aplicação de funcionalidades que utilizam seus dados. Fazendo assim um local específicos que utilizam as informações daquela classe em especifico. Facilitando a compreensão e melhorando a coesão. Pois separamos as informações das ações realizadas com aqueles dados.
