@@ -19,3 +19,21 @@
 :heavy_check_mark:**Solução →** Utilizado o padrão de projeto **Chain of Responsibility**, aplicamos uma cadeia de chamada das regras, como não sabemos qual vai ser aplicada. Realizamos essa cadeia de chamada para verificação e no final se nenhuma dela for aplicadas retornamos que não teve nenhum retorno. Assim solucionamos o problema de não saber qual regra vai ser aplicada.
 
 :information_source:**Objetivo do Chain of Responsibility →** Deixar o código mais coeso, e facilitar a manutenção código por meio da cadeia de chamadas que realizamos com o mesmo. Pois assim se surgir uma nova regra apenas adicionamos ela na cadeia para ser validade juntamente a outras. Devemos levar em consideração que se utilizarmos esse padrão, por causa da cadeia uma regra irá conhecer a outra por consequência.
+
+---
+### Problema 3
+
+:red_circle:**Problema 3 →** Algumas classes que compartilham uma lógica parecida como por exemplo uma lógica para realizar uma ação. Como por exemplo varias classes que tem um if parecido o qual é responsável por uma ação se atender uma determinada condição, realiza uma ação com mesmo intuito, mudando apenas a condição para realização
+
+:heavy_check_mark:**Solução →** Utilizado o padrão de projeto Template Method, como o próprio nome diz um método que serve como template para as outras classes utilizarem, no método que será o template ele ficara responsável pela parte principal da lógica que se repete nas outras classes, não contendo os detalhes e delegando esses detalhes para as outras classes que irão utiliza-lo. Com esse padrão melhoramos a coesão do código e diminuindo o código duplicado.
+
+:information_source:**Objetivo do Template Method →** Aproveitar trechos repetidos de código que mais de uma classe utiliza que mesmo que não sejam iguais mas que contenham uma parte a qual seja igual, seja ela uma condição para que algo aconteça ou algum tipo de ação necessária que seja repetido em mais de um lugar. Delegar essa parte repetitiva para uma classe só e utilizar a partir dela nas outras, diminuindo o trecho repetitivo do código e aumentando a coesão. 
+
+---
+### Problema 4
+
+:red_circle:**Problema 4 →** Problema parecido com o primeiro cenário mas com a diferença de que agora estamos trabalhando com estados. Como por exemplo estado de uma situação de algo, como de um pedido. E precisamos melhorar isso para não fica com código duplicado, melhorar a coesão de cada funcionalidade.
+
+:heavy_check_mark:**Solução →** Utilizado o padrão de projeto State, o qual nos ajuda nessa questão de estado, a ir de um estado para outro. O mesmo no ajuda a implementar a regra de cada estado, como passamos por eles, a diminuir questão de código duplicado para que fique mais fácil de entender a regra de cada estado, como se interagem entre si e oque é possível ou não realizar entre eles.
+
+:information_source:**Objetivo do State →** Melhorar a coesão do código quando implementando no cenário que temos algo que possua estados, para separa melhor funcionalidade de cada um, assim como suas interações e delimitações.
