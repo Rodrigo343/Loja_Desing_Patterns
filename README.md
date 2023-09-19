@@ -2,6 +2,8 @@
 
 ## Desing Patterns✨
 
+:dart:Esse README tem como objetivo conter as informações que anoitei ao longo do curso, contendo meus entendimentos e oque consegui absorver de cada aula e de cada solução.
+
 ---
 ### Problema 1
 
@@ -46,3 +48,12 @@
 :heavy_check_mark:**Solução →** Utilizado o padrão de projeto Command Handlers, conseguimos separa tanto as informações dessa classe que precisamos preencher em um local especifico. E além disso separamos suas ações que utilizam-se das informações dessa classe em outro local para felicitar o entendimento e melhorar a construção do código, ou seja, uma classe é responsável pelos atributos e outra pelas ações relacionadas a classe que contem os atributos.
 
 :information_source:**Objetivo do Command Handlers →** Com esse padrão conseguimos separa as características de uma classe e a aplicação de funcionalidades que utilizam seus dados. Fazendo assim um local específicos que utilizam as informações daquela classe em especifico. Facilitando a compreensão e melhorando a coesão. Pois separamos as informações das ações realizadas com aqueles dados.
+
+---
+### Problema 6
+
+:red_circle:**Problema 6 →** Problema onde temos uma classe que contenha ações especificas de uma funcionalidades que crescerá constantemente pois não sabemos se será necessário adicionar mais ações para aquela funcionalidade.
+
+:heavy_check_mark:**Solução →** Utilizado o padrão de projeto Observer não precisamos chamar todas as  ações secundarias que são necessárias depois da ação principal, ou seja, nossa classe não crescerá constantemente quanto mais ações secundarias criamos. Não é mais necessário instanciar todas elas e delegar a execução da sua ação, agora as mesma ficam esperando a execução da ação principal para realizar seus papeis. Assim diminuindo o acoplamento e amentando a coesão.
+
+:information_source:**Objetivo do Observer→** Com esse padrão conseguimos criar classes que servem de observadores/ouvintes que ficam esperando a execução de determinada ação para realizar algo. Com isso conseguimos separar essas outras ações que dependes da ação principal. Ao invés de chamar cada uma das classes que não seja principal, invertemos o controle e delegamos apenas para eles esperaram a ação principal para depois realizar seus processos.
