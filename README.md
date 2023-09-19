@@ -5,6 +5,8 @@
 :dart:Esse README tem como objetivo conter as informações que anoitei ao longo do curso, contendo meus entendimentos e oque consegui absorver de cada aula e de cada solução.
 
 ---
+Padrões Comportamentais
+---
 ### Problema 1
 
 :red_circle:**Problema→**Uma classe a qual nunca vai parar de crescer e com isso terá muitos if/else, switch/case e por este motivo dificultará a manutenção dessa classe. Cenário: Uma determina regra de negócio, só que varia de acordo com algum parâmetro.
